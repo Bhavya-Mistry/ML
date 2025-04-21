@@ -34,15 +34,15 @@ This project is designed to demonstrate the use of machine learning for healthca
 
 - Libraries:
 
- - Pandas
+   - Pandas
 
- - NumPy
+   - NumPy
 
- - Matplotlib & Seaborn (for data visualization)
+   - Matplotlib & Seaborn (for data visualization)
 
- - Scikit-learn (for machine learning models)
+   - Scikit-learn (for machine learning models)
 
- - SciPy (for statistical analysis)
+   - SciPy (for statistical analysis)
 
 - Jupyter Notebook / Colab 
 
