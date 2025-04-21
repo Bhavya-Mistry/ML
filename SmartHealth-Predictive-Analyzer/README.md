@@ -1,7 +1,7 @@
 # SmartHealth Predictive Analyzer
-SmartHealth Predictive Analyzer is a machine learning project that predicts the likelihood of diabetes based on a set of health metrics. The project uses advanced machine learning techniques, including Random Forest and Logistic Regression models, to predict whether an individual will develop diabetes based on their health-related data. The analysis includes data cleaning, feature engineering, model training, hyperparameter tuning, and model evaluation.
+**SmartHealth Predictive Analyzer** is a machine learning project that predicts the likelihood of diabetes based on a set of health metrics. The project uses advanced machine learning techniques, including **Random Forest and Logistic Regression models**, to predict whether an individual will develop diabetes based on their health-related data. The analysis includes data cleaning, feature engineering, model training, hyperparameter tuning, and model evaluation.
 
-Table of Contents
+## Table of Contents
 Project Overview
 
 Tech Stack
@@ -12,11 +12,11 @@ Data Description
 
 Model Development
 
-Data Preprocessing
+  Data Preprocessing
 
-Model Training
+  Model Training
 
-Model Evaluation
+  Model Evaluation
 
 Results
 
@@ -24,39 +24,39 @@ Future Work
 
 License
 
-Project Overview
-The objective of this project is to build a predictive model that can determine whether an individual is at risk of developing diabetes. Using historical data about patient health records, the model is trained to predict the Outcome (whether a person has diabetes) based on various features such as Glucose, BMI, Age, Blood Pressure, etc..
+## Project Overview
+The objective of this project is to build a predictive model that can determine whether an individual is at risk of developing diabetes. Using historical data about patient health records, the model is trained to predict the **Outcome** (whether a person has diabetes) based on various features such as **Glucose, BMI, Age, Blood Pressure, etc..**
 
 This project is designed to demonstrate the use of machine learning for healthcare predictions, and it is structured to help you understand the process from data collection to model deployment.
 
-Tech Stack
+## Tech Stack
 Python 3.x
 
 Libraries:
 
-Pandas
+  Pandas
 
-NumPy
+  NumPy
 
-Matplotlib & Seaborn (for data visualization)
+  Matplotlib & Seaborn (for data visualization)
 
-Scikit-learn (for machine learning models)
+  Scikit-learn (for machine learning models)
 
-SciPy (for statistical analysis)
+  SciPy (for statistical analysis)
 
 Jupyter Notebook (for interactive coding)
 
 VS Code (for code editing)
 
-Installation
+## Installation
 To run the code on your local machine, follow these steps:
 
-Clone the repository:
+1. Clone the repository:
 
-bash
-Copy
-Edit
-git clone https://github.com/Bhavya-Mistry/Data-Science.git
+
+``` 
+git clone https://github.com/Bhavya-Mistry/Data-Science.git 
+```
 Navigate to the project folder:
 
 bash
