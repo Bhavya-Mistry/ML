@@ -10,19 +10,19 @@ Tech Stack
 
 - Data Description
 
-Model Development
+-Model Development
 
-- Data Preprocessing
+  - Data Preprocessing
 
-- Model Training
+  - Model Training
 
 - Model Evaluation
 
-Results
+- Results
 
-Future Work
+- Future Work
 
-License
+- License
 
 ### Project Overview
 The objective of this project is to build a predictive model that can determine whether an individual is at risk of developing diabetes. Using historical data about patient health records, the model is trained to predict the **Outcome** (whether a person has diabetes) based on various features such as **Glucose, BMI, Age, Blood Pressure, etc..**
