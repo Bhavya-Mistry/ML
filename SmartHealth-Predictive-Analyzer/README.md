@@ -2,9 +2,9 @@
 **SmartHealth Predictive Analyzer** is a machine learning project that predicts the likelihood of diabetes based on a set of health metrics. The project uses advanced machine learning techniques, including **Random Forest and Logistic Regression models**, to predict whether an individual will develop diabetes based on their health-related data. The analysis includes data cleaning, feature engineering, model training, hyperparameter tuning, and model evaluation.
 
 ### Table of Contents
-Project Overview
+- Project Overview
 
-Tech Stack
+- Tech Stack
 
 - Installation
 
@@ -16,7 +16,7 @@ Tech Stack
 
   - Model Training
 
-- Model Evaluation
+  - Model Evaluation
 
 - Results
 
@@ -34,15 +34,15 @@ Python 3.x
 
 Libraries:
 
-  Pandas
+- Pandas
 
-  NumPy
+- NumPy
 
-  Matplotlib & Seaborn (for data visualization)
+- Matplotlib & Seaborn (for data visualization)
 
-  Scikit-learn (for machine learning models)
+- Scikit-learn (for machine learning models)
 
-  SciPy (for statistical analysis)
+- SciPy (for statistical analysis)
 
 Jupyter Notebook (for interactive coding)
 
