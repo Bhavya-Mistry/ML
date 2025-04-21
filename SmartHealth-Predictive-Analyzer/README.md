@@ -57,28 +57,38 @@ To run the code on your local machine, follow these steps:
 ``` 
 git clone https://github.com/Bhavya-Mistry/Data-Science.git 
 ```
-Navigate to the project folder:
+2. Navigate to the project folder:
 
-bash
-Copy
-Edit
+```
 cd Data-Science/SmartHealth-Predictive-Analyzer
-Install the required dependencies: You can install the required dependencies by running:
+```
 
-bash
-Copy
-Edit
+3. Install the required dependencies: You can install the required dependencies by running:
+
+```
 pip install -r requirements.txt
-Run the Jupyter notebook to start the analysis:
+```
 
-bash
-Copy
-Edit
+4. Run the Jupyter/Colab notebook to start the analysis:
+
+if using jupiter:
+```
 jupyter notebook model.ipynb
-Data Description
-The dataset used for this analysis is a diabetes prediction dataset. It contains data about various health metrics of patients, including:
+```
 
+## Data Description
+The dataset used for this analysis is a **diabetes prediction dataset**. It contains data about various health metrics of patients, including:
 
+Column Name | Description
+Pregnancies | Number of pregnancies
+Glucose | Plasma glucose concentration (mg/dL)
+Blood Pressure | Diastolic blood pressure (mm Hg)
+Skin Thickness | Triceps skin fold thickness (mm)
+Insulin | 2-hour serum insulin (mu U/ml)
+BMI | Body mass index (kg/m^2)
+Diabetes Pedigree Function | Diabetes pedigree function (a function of family history)
+Age | Age (years)
+Outcome | Class variable (1 if diabetic, 0 otherwise)
 Column Name	Description
 Pregnancies	Number of pregnancies
 Glucose	Plasma glucose concentration (mg/dL)
