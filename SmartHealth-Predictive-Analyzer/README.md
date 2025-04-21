@@ -30,23 +30,21 @@ The objective of this project is to build a predictive model that can determine 
 This project is designed to demonstrate the use of machine learning for healthcare predictions, and it is structured to help you understand the process from data collection to model deployment.
 
 ### Tech Stack
-Python 3.x
+- Python 3.x
 
-Libraries:
+- Libraries:
 
-- Pandas
+ - Pandas
 
-- NumPy
+ - NumPy
 
-- Matplotlib & Seaborn (for data visualization)
+ - Matplotlib & Seaborn (for data visualization)
 
-- Scikit-learn (for machine learning models)
+ - Scikit-learn (for machine learning models)
 
-- SciPy (for statistical analysis)
+ - SciPy (for statistical analysis)
 
-Jupyter Notebook (for interactive coding)
-
-VS Code (for code editing)
+- Jupyter Notebook / Colab 
 
 ### Installation
 To run the code on your local machine, follow these steps:
