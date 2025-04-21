@@ -1,4 +1,4 @@
-#SmartHealth Predictive Analyzer
+# SmartHealth Predictive Analyzer
 SmartHealth Predictive Analyzer is a machine learning project that predicts the likelihood of diabetes based on a set of health metrics. The project uses advanced machine learning techniques, including Random Forest and Logistic Regression models, to predict whether an individual will develop diabetes based on their health-related data. The analysis includes data cleaning, feature engineering, model training, hyperparameter tuning, and model evaluation.
 
 Table of Contents
