@@ -10,7 +10,7 @@ Tech Stack
 
 - Data Description
 
--Model Development
+- Model Development
 
   - Data Preprocessing
 
