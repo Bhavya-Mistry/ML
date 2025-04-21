@@ -6,17 +6,17 @@ Project Overview
 
 Tech Stack
 
-Installation
+- Installation
 
-Data Description
+- Data Description
 
 Model Development
 
-  Data Preprocessing
+- Data Preprocessing
 
-  Model Training
+- Model Training
 
-  Model Evaluation
+- Model Evaluation
 
 Results
 
