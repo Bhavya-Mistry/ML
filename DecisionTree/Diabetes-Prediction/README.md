@@ -46,8 +46,9 @@ The trained decision tree is saved as an image:
 
 **`diabetes_tree.png`**
 
-![Decision Tree](Output Images/Diabetes-Prediction.png)
-![Confusion Matrix](Output Images/best_diabetes_tree.png)
+![Decision Tree](Output%20Images/Diabetes-Prediction.png)
+![Confusion Matrix](Output%20Images/best_diabetes_tree.png)
+
 
 
 ---
