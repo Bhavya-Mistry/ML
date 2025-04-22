@@ -1,12 +1,12 @@
 # 🩺 Diabetes Prediction using Decision Tree
 
-This project uses the **Pima Indians Diabetes Dataset** and applies a **Decision Tree Classifier** to predict whether a patient has diabetes based on diagnostic measurements.
+This project uses the **Diabetes Dataset** and applies a **Decision gTree Classifier** to predict whether a patient has diabetes based on diagnostic measurements.
 
 ---
 
 ## 📊 Dataset
 
-- Source: [Pima Indians Diabetes Dataset](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
+- Source: [Pima Indians Diabetes Dataset](https://github.com/Bhavya-Mistry/ML/blob/main/DecisionTree/Diabetes-Prediction/Dataset/diabetess.csv)
 - Rows: 768
 - Columns: 9 (8 features + 1 target)
 
@@ -35,7 +35,7 @@ This project uses the **Pima Indians Diabetes Dataset** and applies a **Decision
 
 ## 📈 Result
 
-- ✅ Achieved accuracy: ~70-75% (varies slightly due to randomness in train-test split)
+- ✅ Achieved accuracy: ~74% 
 - ✅ Trained model visualized as a decision tree
 
 ---
