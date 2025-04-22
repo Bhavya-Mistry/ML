@@ -13,10 +13,10 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.tree import DecisionTreeClassifier, export_graphviz
 from sklearn import metrics
-from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 from six import StringIO
 import pydotplus
 from IPython.display import Image
@@ -38,60 +38,51 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_
 
 """# Mode training and prediction"""
 
-# Create Decision Tree classifier and train it
-clf = DecisionTreeClassifier(random_state=42)
-clf.fit(X_train, Y_train)
+param_grid = {
+    'criterion': ['gini', 'entropy'],
+    'max_depth': [3, 5, 7, 10, None],
+    'min_samples_split': [2, 5, 10],
+    'min_samples_leaf': [1, 2, 4]
+}
 
-# Make predictions
-Y_pred = clf.predict(X_test)
+# Initialize classifier
+clf = DecisionTreeClassifier(random_state=42)
+
+# Grid search
+grid_search = GridSearchCV(estimator=clf, param_grid=param_grid,
+                           cv=5, n_jobs=-1, scoring='accuracy', verbose=1)
+
+# Fit
+grid_search.fit(X_train, Y_train)
+
+# Best estimator
+best_clf = grid_search.best_estimator_
+
+# Predictions
+y_pred = best_clf.predict(X_test)
 
 """# Evaluation"""
 
-# Evaluate the model
-accuracy = metrics.accuracy_score(Y_test, Y_pred)
-print("\nModel Accuracy: {:.2f}%".format(accuracy * 100))
-
-# Print classification report and confusion matrix
-print("\nClassification Report:")
-print(classification_report(Y_test, Y_pred))
-
-print("Confusion Matrix:")
-print(confusion_matrix(Y_test, Y_pred))
-
-# Visualize confusion matrix
-plt.figure(figsize=(6, 4))
-sns.heatmap(confusion_matrix(Y_test, Y_pred), annot=True, fmt='d', cmap='Blues')
-plt.xlabel('Predicted')
-plt.ylabel('Actual')
-plt.title('Confusion Matrix')
-plt.tight_layout()
-plt.savefig("confusion_matrix.png")
-plt.show()
+# Accuracy
+print("Best Parameters:", grid_search.best_params_)
+print("Accuracy:", accuracy_score(Y_test, Y_pred))
+print("Classification Report:\n", classification_report(Y_test, Y_pred))
 
 """# Decision Tree Image"""
 
-# Required imports
-from sklearn.tree import export_graphviz
-from six import StringIO
-import pydotplus
-from IPython.display import Image
+# Visualize the best tree
+plt.figure(figsize=(12, 8))
+plot_tree(best_clf, filled=True, feature_names=feature_cols, class_names=['0', '1'])
+plt.title("Best Decision Tree (After Hyperparameter Tuning)")
+plt.show()
 
-# Export the decision tree to DOT format
+# Save as image using Graphviz
 dot_data = StringIO()
-export_graphviz(clf, out_file=dot_data,
+export_graphviz(best_clf, out_file=dot_data,
                 filled=True, rounded=True,
                 special_characters=True,
                 feature_names=feature_cols,
                 class_names=['0', '1'])
-
-# Generate the graph from DOT data
 graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
-
-# Save the graph as a PNG image
-graph.write_png("diabetes_tree.png")
-
-# Display the image inline (only works in Jupyter)
-Image(graph.create_png())
-
-# Confirmation message
-print("Decision tree image saved as 'diabetes_tree.png'")
+graph.write_png("best_diabetes_tree.png")
+print("Best decision tree saved as 'best_diabetes_tree.png'")
