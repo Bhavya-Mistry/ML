@@ -6,7 +6,7 @@ This project uses the **Diabetes Dataset** and applies a **Decision gTree Classi
 
 ## 📊 Dataset
 
-- Source: [Pima Indians Diabetes Dataset](https://github.com/Bhavya-Mistry/ML/blob/main/DecisionTree/Diabetes-Prediction/Dataset/diabetess.csv)
+- Source: [Diabetes Dataset](https://github.com/Bhavya-Mistry/ML/blob/main/DecisionTree/Diabetes-Prediction/Dataset/diabetess.csv)
 - Rows: 768
 - Columns: 9 (8 features + 1 target)
 
