@@ -1,4 +1,1 @@
-Feature Engineering 
-Linear Regression
-Logistics Regression 
-Decision Tree
+Just a 3rd year IT student exploring the massive world of DataScience ;)
