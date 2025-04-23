@@ -78,4 +78,4 @@ After training the model, it was evaluated on the test set using the following m
 Ensure you have the following libraries installed:
 
 ```bash
-pip install pandas numpy scikit-learn seaborn matplotlib
+pip install -r requirements.txt
