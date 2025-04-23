@@ -1,4 +1,4 @@
-# Flight Price Prediction
+# ✈️ Flight Price Prediction
 
 This project aims to predict the flight prices based on various features using machine learning models, including Linear Regression and Decision Tree Regression. The dataset used contains information about flight details such as airline, source, destination, duration, stops, and additional features.
 
