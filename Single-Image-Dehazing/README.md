@@ -1,5 +1,5 @@
 
-# Image Dehazing using Dark Channel Prior and Guided Filtering
+# ☁️ Image Dehazing using Dark Channel Prior and Guided Filtering
 
 This project demonstrates image dehazing using the **Dark Channel Prior** and **Guided Filtering** techniques to improve visibility in hazy images.
 
