@@ -1,6 +1,6 @@
 # 🩺 Diabetes Prediction using Decision Tree
 
-This project uses the **Diabetes Dataset** and applies a **Decision gTree Classifier** to predict whether a patient has diabetes based on diagnostic measurements.
+This project uses the **Diabetes Dataset** and applies a **Decision Tree Classifier** to predict whether a patient has diabetes based on diagnostic measurements.
 
 ---
 
