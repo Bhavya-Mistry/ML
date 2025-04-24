@@ -64,3 +64,5 @@ Bar Plot of customer count in each cluster
 
 ![Web interface](https://raw.githubusercontent.com/Bhavya-Mistry/streamlit-cloud/main/customer-segmentation/Output-Images/img1.png)
 ![Web interface](https://raw.githubusercontent.com/Bhavya-Mistry/streamlit-cloud/main/customer-segmentation/Output-Images/img2.png)
+
+**Have a detailed look [Click](https://github.com/Bhavya-Mistry/streamlit-cloud/tree/main/customer-segmentation).**
