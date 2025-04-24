@@ -47,7 +47,6 @@ pip install -r reqiurements.txt``
 Elbow Curve to determine optimal clusters (k)
 ![Elbow Plot](Output-Images/img5.png)
 
-
 3D Scatter Plot of clusters based on RFM
 ![3D plot](Output-Images/img4.png)
 
@@ -55,4 +54,11 @@ Heatmap of cluster centers
 ![Heatmap](Output-Images/img1.png)
 
 Bar Plot of customer count in each cluster
+![Bar Plot](Output-Images/img2.png)
 
+
+
+
+## Web Interface
+**A simple web interface created using streamlit**
+![Bar Plot](streamlit-cloud/customer-segmentation/Output-Images/img1.png)
