@@ -62,5 +62,5 @@ Bar Plot of customer count in each cluster
 ## Web Interface
 <br>**A simple web interface created using streamlit**
 
-![Web Interface](streamlit-cloud/customer-segmentation/Output-Images/img1.png)
-![Web Interface](streamlit-cloud/customer-segmentation/Output-Images/img2.png)
+![Web interface](https://raw.githubusercontent.com/Bhavya-Mistry/streamlit-cloud/main/customer-segmentation/Output-Images/img1.png)
+![Web interface](https://raw.githubusercontent.com/Bhavya-Mistry/streamlit-cloud/main/customer-segmentation/Output-Images/img2.png)
