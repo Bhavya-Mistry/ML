@@ -2,8 +2,10 @@ import streamlit as st
 import nltk
 import re
 import heapq
+from nltk.tokenize import sent_tokenize, word_tokenize
+from nltk.corpus import stopwords
 
-# Download required resources
+# Download only once
 nltk.download('punkt')
 nltk.download('stopwords')
 
@@ -13,12 +15,16 @@ def summarize_text(article_text):
     clean_text = re.sub(r'[^a-zA-Z]', ' ', article_text)
     clean_text = re.sub(r'\s+', ' ', clean_text)
 
-    sentence_list = nltk.sent_tokenize(article_text)
-    stopwords = nltk.corpus.stopwords.words('english')
+    # Use explicit tokenizer to avoid punkt_tab bug
+    from nltk.tokenize import PunktSentenceTokenizer
+    tokenizer = PunktSentenceTokenizer()
+    sentence_list = tokenizer.tokenize(article_text)
+
+    stop_words = set(stopwords.words('english'))
 
     word_frequencies = {}
-    for word in nltk.word_tokenize(clean_text):
-        if word not in stopwords:
+    for word in word_tokenize(clean_text):
+        if word not in stop_words:
             word_frequencies[word] = word_frequencies.get(word, 0) + 1
 
     max_freq = max(word_frequencies.values())
@@ -27,7 +33,7 @@ def summarize_text(article_text):
     sentence_scores = {}
     for sentence in sentence_list:
         if len(sentence.split()) < 30:
-            for word in nltk.word_tokenize(sentence.lower()):
+            for word in word_tokenize(sentence.lower()):
                 if word in word_frequencies:
                     sentence_scores[sentence] = sentence_scores.get(sentence, 0) + word_frequencies[word]
 
