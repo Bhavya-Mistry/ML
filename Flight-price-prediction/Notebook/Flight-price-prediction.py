@@ -17,10 +17,11 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 from sklearn.model_selection import GridSearchCV
 from sklearn.tree import DecisionTreeRegressor
+import pickle
 
 """# Load Dataset"""
 
-df = pd.read_excel("Flight-price-predication.xlsx")
+df = pd.read_excel("Flight-price-prediction\Dataset\Flight-price-predication.xlsx")
 
 df.head()
 
@@ -119,3 +120,8 @@ print(f"MAE: {mae_dt:.2f}")
 print(f"MSE: {mse_dt:.2f}")
 print(f"RMSE: {rmse_dt:.2f}")
 print(f"MAPE: {mape_dt:.2f} %")
+
+
+with open('Flight-price-prediction\model\decision_tree_model.pkl', 'wb') as file:
+    pickle.dump(best_model, file)
+print("Decision Tree model saved as 'decision_tree_model.pkl'")
