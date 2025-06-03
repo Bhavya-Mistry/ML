@@ -122,6 +122,11 @@ print(f"RMSE: {rmse_dt:.2f}")
 print(f"MAPE: {mape_dt:.2f} %")
 
 
-with open('Flight-price-prediction\model\decision_tree_model.pkl', 'wb') as file:
+with open(r'Flight-price-prediction\model\decision_tree_model.pkl', 'wb') as file:
     pickle.dump(best_model, file)
 print("Decision Tree model saved as 'decision_tree_model.pkl'")
+
+
+with open(r'Flight-price-prediction\model\scaler.pkl', 'wb') as file:
+    pickle.dump(scaler, file)
+print("StandardScaler saved as 'scaler.pkl'")
