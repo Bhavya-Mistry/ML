@@ -4,7 +4,7 @@ This project aims to predict the flight prices based on various features using m
 
 ## Project Structure
 
-- **`Untitled3.ipynb`**: Jupyter Notebook containing the full code for data processing, feature engineering, model training, and evaluation.
+- A Jupyter Notebook containing the full code for data processing, feature engineering, model training, and evaluation.
 - **`Flight-price-predication.xlsx`**: Dataset used for training and testing the models.
 
 ## Libraries Used
